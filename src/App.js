@@ -1,7 +1,7 @@
 
 import './App.css';
 import CssBaseline from '@mui/material/CssBaseline';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {BrowserRouter as Router, HashRouter, Route, Routes} from 'react-router-dom';
 import Header from './components/Header';
 import Error404 from './pages/Error404';
 import Cancion from './pages/Cancion';
@@ -92,7 +92,7 @@ function App() {
     }, [search]);
 
     return (
-        <Router>
+        <Router basename="/">            
             <CssBaseline>
                 <div className="App">
                     <Header />
@@ -148,7 +148,7 @@ function App() {
                         </Grid>
                     </Box>
                 </div>                    
-            </CssBaseline>
+            </CssBaseline>            
         </Router>
     );
 }

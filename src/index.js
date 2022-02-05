@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { HashRouter } from 'react-router-dom';
 
 
 const theme = createTheme({
@@ -17,7 +18,7 @@ ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <App />
-    </ThemeProvider>    
+    </ThemeProvider>        
   </React.StrictMode>,
   document.getElementById('root')
 );

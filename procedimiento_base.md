@@ -14,5 +14,19 @@ npm install @mui/styles
 [CSS]
 whiteSpace: pre-wrap
 
+*** NOTA:
+al mismo nivel de scripts en el package.JSON, se escribe lo siguiente:
+"homepage": "./",
+
+para el caso se un deploy en un hosting compartido.
+
+npm run build
+
+## GH-PAGES
+$ npm i gh-pages -D
+
+"homepage": "https://github.com/jaimediaz817/proyectofinal-escuelaIT",
+
+npm run deploy + ENTER
 
 
